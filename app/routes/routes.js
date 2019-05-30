@@ -11,6 +11,7 @@ module.exports = function(application){
 
     application.get('/lancarDados', function(req,res){
     	console.log('routes: /lancarDados');
+        application.app.controllers.jogo.novoLancamento(application, req, res);
     	res.send('Esta funcionalidade não foi implementada ainda.'); 
     });
 
